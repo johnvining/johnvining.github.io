@@ -1,13 +1,13 @@
 body {
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	background-color: #c4fff9;
+	background-color: #C6FFF6;
 	font-size: 14px;
 }
 
 h2 {
 	font-size: 24px;
 	font-weight: normal;
-	font-family: Monaco, Courier;
+	font-family: "Monaco", "Courier New", monospace;
 }
 
 a:link {
