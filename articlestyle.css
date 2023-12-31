@@ -10,6 +10,11 @@ h2 {
 	font-family: "Monaco", "Courier New", monospace;
 }
 
+h5 {
+	font-weight: normal;
+	color: #292828;
+}
+
 a:link {
 	color: black;
 }
