@@ -1,0 +1,101 @@
+body {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	background-color: #d1fff8;
+	font-size: 14px;
+	max-width:500px;
+	margin: 40px auto;
+	max-width:500px;
+	margin: 40px auto;
+	}
+   
+div.headernav {
+	display: flex;
+	align-items: center;
+}
+
+/*Page title*/
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	color:#032e2c;
+	font-family: "Monaco", "Courier New", monospace;
+}
+
+/*Article headline*/
+h3 {
+	font-size: 20px;
+	font-weight: normal;
+	font-family: "Monaco", "Courier New", monospace;
+	margin-top: 60px;
+}
+
+h5 {
+	font-weight: normal;
+	color: #292828;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+hr {
+	border: 1px solid black;
+	width: 20%;
+
+}
+
+a.footnote {
+	font-size: 8px;
+	vertical-align: super;
+	text-decoration: none;
+	background-color: white;
+	padding: 2px;
+	border-radius: 2px;
+	margin: 4px;
+}
+
+a.footnote:hover {
+	background-color: #00ccad;
+}
+
+a.title {
+	color: black;
+	text-decoration: none;
+}
+a.title:hover {
+	text-decoration:underline;
+}
+
+a.nav {
+	text-decoration: none;
+	color: #032e2c;
+	background-color: white;
+	padding: 4px;
+	border-radius: 4px;
+	font-family: "Monaco", "Courier New", monospace;
+	height: 100%;
+	margin: 8px;
+	font-size: 14px;
+}
+a.nav:hover {
+	background-color: #00ccad;
+}
+
+blockquote {
+	margin-block-start: 20px;
+	margin-block-end: 20px;
+	margin-inline-start: 20px;
+	margin-inline-end: 20px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+li {
+	margin: 14px;
+	margin-left: 20px;
+}
+
+
