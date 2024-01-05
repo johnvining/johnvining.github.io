@@ -44,6 +44,14 @@ hr {
 
 }
 
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: #00332b;
+}
+
 a.footnote {
 	font-size: 8px;
 	vertical-align: super;
@@ -51,7 +59,7 @@ a.footnote {
 	background-color: white;
 	padding: 2px;
 	border-radius: 2px;
-	margin: 4px;
+	margin: 2px;
 }
 
 a.footnote:hover {
@@ -64,6 +72,18 @@ a.title {
 }
 a.title:hover {
 	text-decoration:underline;
+}
+
+a.reversefootnote {
+	background-color: white;
+	padding: 2px;
+	border-radius: 2px;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+a.reversefootnote:hover {
+	background-color: #00ccad;
 }
 
 a.nav {
