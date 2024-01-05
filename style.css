@@ -29,6 +29,17 @@ h3 {
 	margin-top: 60px;
 }
 
+/*Notes list*/
+h4 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.date {
+	font-family: "Monaco", "Courier New", monospace;
+	font-size: 12px;
+}
+
 h5 {
 	font-weight: normal;
 	color: #292828;
