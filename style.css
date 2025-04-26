@@ -35,6 +35,14 @@ h3 {
 	margin-top: 40px;
 }
 
+/*Book title*/
+h4 {
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Monaco", "Courier New", monospace;
+	margin-top: 26px;
+}
+
 /*Subtitle*/
 h5 {
 	font-weight: normal;
@@ -49,7 +57,7 @@ h4 {
 
 .date {
 	font-family: "Monaco", "Courier New", monospace;
-	font-size: 12px;
+	font-size: 10px;
 }
 
 
