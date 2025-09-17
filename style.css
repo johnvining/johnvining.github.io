@@ -57,7 +57,7 @@ h4 {
 
 .date {
 	font-family: "Monaco", "Courier New", monospace;
-	font-size: 10px;
+	font-size: 9px;
 }
 
 
@@ -142,6 +142,27 @@ ul {
 li {
 	margin: 14px;
 	margin-left: 20px;
+}
+
+/*Article list table*/
+.article-list {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.article-list .date-cell {
+	width: 60px;
+	vertical-align: baseline;
+	padding: 2px 12px 2px 0;
+	text-align: right;
+}
+
+.article-list .title-cell {
+	vertical-align: baseline;
+	padding: 2px 0;
+	font-weight: normal;
+	color: #292828;
+	font-size: 11px;
 }
 
 
