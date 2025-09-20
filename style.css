@@ -165,4 +165,12 @@ li {
 	font-size: 11px;
 }
 
+.book-titles {
+	display: block;
+	margin-top: 4px;
+	margin-left: 8px;
+	font-style: italic;
+	font-size: 10px;
+}
+
 
