@@ -14,14 +14,16 @@ div.headernav {
 
 div.articletitle {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
 	padding: 0px;
+	margin-top: 30px;
+	text-align: center;
 }
 
 /*Page title*/
 h2 {
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: normal;
 	color:#032e2c;
 	font-family: "Monaco", "Courier New", monospace;
@@ -32,8 +34,31 @@ h3 {
 	font-size: 18px;
 	font-weight: normal;
 	font-family: "Monaco", "Courier New", monospace;
-	margin-top: 40px;
+	margin-top: 0px;
 }
+
+
+
+div.articletitle h3 {
+	margin-top: 0px;
+	font-size: 16px;
+}
+
+div.articletitle h3:first-child {
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+
+div.articletitle h3:last-child {
+	margin-top: 0px;
+}
+
+div.articletitle h3.article-date {
+	font-size: 9px;
+	color: #666666;
+}
+
+
 
 /*Book title*/
 h4 {
@@ -120,7 +145,7 @@ a.nav {
 	font-family: "Monaco", "Courier New", monospace;
 	height: 100%;
 	margin: 8px;
-	font-size: 14px;
+	font-size: 10px;
 	margin-right: 0px;
 }
 a.nav:hover {
