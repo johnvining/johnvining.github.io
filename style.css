@@ -198,4 +198,54 @@ li {
 	font-size: 10px;
 }
 
+.project-list {
+	margin-top: 20px;
+}
+
+.project {
+	margin-bottom: 24px;
+}
+
+.project-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+a.project-name {
+	text-decoration: none;
+	color: #032e2c;
+	background-color: white;
+	padding: 4px;
+	border-radius: 4px;
+	font-family: "Monaco", "Courier New", monospace;
+	font-size: 10px;
+}
+
+a.project-name:hover {
+	background-color: #00ccad;
+}
+
+span.project-name-disabled {
+	color: #999;
+	background-color: #f0f0f0;
+	padding: 4px;
+	border-radius: 4px;
+	font-family: "Monaco", "Courier New", monospace;
+	font-size: 10px;
+}
+
+.project-dates {
+	font-family: "Monaco", "Courier New", monospace;
+	font-size: 8px;
+	color: #292828;
+}
+
+.project-description {
+	margin: 6px 0 0 0;
+	padding-left: 16px;
+	font-size: 11px;
+	color: #292828;
+}
+
 
