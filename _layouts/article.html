@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="headernav">
+	<h2><a href="https://jvining.com" class="title">John Vining</a></h2>
+	<a href="mailto:john@jvining.com" class="nav">john@jvining.com</a>
+</div>
+
+<div class="articletitle">
+	<h3 class="article-date">{{ page.display_date }}</h3>
+	<h3 id="{{ page.slug }}">{{ page.title }}</h3>
+</div>
+
+{{ content }}
+</body>
+</html>

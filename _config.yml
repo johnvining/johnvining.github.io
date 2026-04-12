@@ -1,0 +1,29 @@
+title: John Vining
+url: https://jvining.com
+destination: docs
+
+# Jekyll collections — source files live in _notes/, _reading/, _pages/
+# Built HTML in notes/, reading/, index.html is excluded from Jekyll's source
+# so it doesn't get copied into docs/ — build.sh copies docs/ back to those paths
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name.html
+  reading:
+    output: true
+    permalink: /reading/:name.html
+  pages:
+    output: true
+
+exclude:
+  - notes/
+  - reading/
+  - index.html
+  - Gemfile
+  - Gemfile.lock
+  - diff.sh
+  - build.sh
+
+kramdown:
+  input: GFM
+  footnote_backlink: "&#160;&#8617;"

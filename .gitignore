@@ -1,0 +1,6 @@
+_site/
+docs/
+.jekyll-cache/
+.bundle/
+Gemfile.lock
+.claude/
