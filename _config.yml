@@ -19,6 +19,8 @@ exclude:
   - notes/
   - reading/
   - index.html
+  - projects.html
+  - contact.html
   - Gemfile
   - Gemfile.lock
   - diff.sh

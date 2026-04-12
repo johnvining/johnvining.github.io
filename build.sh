@@ -8,6 +8,8 @@ env -i \
 
 # Copy built files to canonical paths so git diff shows changes inline
 cp docs/index.html index.html
+cp docs/projects.html projects.html
+cp docs/contact.html contact.html
 
 for f in docs/notes/*.html; do
   [ -f "$f" ] && cp "$f" "notes/$(basename "$f")"
