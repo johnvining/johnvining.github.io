@@ -2,8 +2,10 @@ body {
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	background-color: #d1fff8;
 	font-size: 14px;
-	max-width:500px;
+	max-width: 500px;
 	margin: 40px auto;
+	padding: 0 16px;
+	box-sizing: border-box;
 	}
    
 div.headernav {
