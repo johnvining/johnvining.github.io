@@ -3,6 +3,7 @@ layout: article
 title: Blaine of Maine
 slug: blaineofmaine
 display_date: 1/5/24
+date: 2024-01-05
 ---
 
 ##### *During the debates about amnesty for Jefferson Davis that took place in 1875 and 1876, Republican Representative and former Speaker of the House James G. Blaine argued that giving Jefferson Davis amnesty from the 14th Amendment would make Davis eligible for President of the United States.*

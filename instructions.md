@@ -102,7 +102,9 @@ Kramdown GFM footnote syntax. Use `[^N]` inline and `[^N]: citation` at the bott
 
 ## RSS
 
-Not yet set up. Planned: hand-written `feed.xml` with new entries added manually at the top, following the same pattern as index.html updates.
+`feed.xml` is generated automatically by Jekyll from the `_notes` and `_reading` collections, sorted by `date` descending, capped at 20 items. `build.sh` copies the built file back to the root alongside the other built files.
+
+To include a new article in the feed, add `date: YYYY-MM-DD` to its front matter — this is also what controls sort order. All existing entries already have this field. Without it, an article will be excluded from the feed.
 
 ## Styles
 

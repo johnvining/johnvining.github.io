@@ -3,6 +3,7 @@ layout: article
 title: Consensus among Competitors
 slug: consensusamongcompetitors
 display_date: 9/16/25
+date: 2025-09-16
 ---
 
 The standard way of creating business software is to create a program that represents a specific way of doing things. This is either some sort of average of all expected ways of doing things, or, in an "opinionated" piece of software, this is what the producer of the software thinks is the correct way of doing things.

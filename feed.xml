@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John Vining</title>
+    <link>https://jvining.com</link>
+    <atom:link href="https://jvining.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Essays and reading notes by John Vining</description>
+    <language>en-us</language>
+    
+    
+    <item>
+      <title>Reading Notes, June 2025</title>
+      <link>https://jvining.com/reading/2025-06.html</link>
+      <guid isPermaLink="true">https://jvining.com/reading/2025-06.html</guid>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 -0600</pubDate>
+      <description>Greg Mckeown, Essentialism: The Disciplined Pursuit of Less. The popular book on focusing one’s efforts by saying no: only once you give yourself permission to stop trying to do it all, to stop saying yes to everyone, can you make your highest contribution towards the things that really matter.1 The cover says that this book has been out for ten years and sold two million copies. Much of what it has to say has probably...</description>
+    </item>
+    
+    <item>
+      <title>Reading Notes, May 2025</title>
+      <link>https://jvining.com/reading/2025-05.html</link>
+      <guid isPermaLink="true">https://jvining.com/reading/2025-05.html</guid>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 -0600</pubDate>
+      <description>Jennifer Burns, Milton Friedman: The Last Conservative. A biography of the economist, released in 2023, which calls itself “the first full-length biography of Friedman based upon archival research.”1 In terms of his economic ideas, it focuses on two things: Chicago Price Theory, which is “the analysis of rational human choice under conditions of scarcity” (i.e. “microeconomics”), and Monetarism, which is characterized by an insistent focus on money and, more specifically, on the overall quantity of...</description>
+    </item>
+    
+    <item>
+      <title>Reading Notes, April 2025</title>
+      <link>https://jvining.com/reading/2025-04.html</link>
+      <guid isPermaLink="true">https://jvining.com/reading/2025-04.html</guid>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 -0500</pubDate>
+      <description>Jeanette Winterson, Oranges are Not the Only Fruit. If it’s a criticism of religion, it’s one done without the malice and flattening incuriosity of the New Atheists. A novel about a woman growing up in her adopted family, autobiographical to some degree but with a dreaminess that makes it feel like fantasy, though nothing is strictly unbelievable. She needed eggs, the Lord had sent them. She had a bout of colic, the Lord took it...</description>
+    </item>
+    
+    <item>
+      <title>Consensus among Competitors</title>
+      <link>https://jvining.com/notes/consensusamongcompetitors.html</link>
+      <guid isPermaLink="true">https://jvining.com/notes/consensusamongcompetitors.html</guid>
+      <pubDate>Tue, 16 Sep 2025 00:00:00 -0500</pubDate>
+      <description>The standard way of creating business software is to create a program that represents a specific way of doing things. This is either some sort of average of all expected ways of doing things, or, in an “opinionated” piece of software, this is what the producer of the software thinks is the correct way of doing things. Then, when a needed deviation either arises or is predicted, a piece of configuration is added to the...</description>
+    </item>
+    
+    <item>
+      <title>Reading Notes, March 2025</title>
+      <link>https://jvining.com/reading/2025-03.html</link>
+      <guid isPermaLink="true">https://jvining.com/reading/2025-03.html</guid>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 -0500</pubDate>
+      <description>Mikhail Bulgakov, The Master and Margarita.1 A novel about the devil and a housing crisis. Weird and fun. Eventually, even a little bit touching. It was, I read, the inspiration for the Stones’ “Sympathy for the Devil”. You can see a clip online where Jagger sounds just like Dylan as he’s working out how to sing it2. Virginia Postrel, The Future and Its Enemies: The Growing Conflict Over Creativity, Enterprise, and Progress. “The Future” is...</description>
+    </item>
+    
+    <item>
+      <title>Reading Notes, February 2025</title>
+      <link>https://jvining.com/reading/2025-02.html</link>
+      <guid isPermaLink="true">https://jvining.com/reading/2025-02.html</guid>
+      <pubDate>Tue, 04 Mar 2025 00:00:00 -0600</pubDate>
+      <description>Elena Ferrante, Those Who Leave and Those Who Stay.1 A fascinating and depressing portrait, the third of four books in the series. The narrator is lost; her kids figure barely at all. It’s an interesting look at status and politics-as-status from the inside: Today it’s hard to explain why I insisted on writing that stuff or, rather, why, although I scarcely took part in the city’s political life, and in spite of my meekness, I...</description>
+    </item>
+    
+    <item>
+      <title>Reading Notes, January 2025</title>
+      <link>https://jvining.com/reading/2025-01.html</link>
+      <guid isPermaLink="true">https://jvining.com/reading/2025-01.html</guid>
+      <pubDate>Tue, 04 Feb 2025 00:00:00 -0600</pubDate>
+      <description>C. S. Lewis, A Grief Observed. Short. Moving. Not at all therapeutic. Margaret Shepherd, The Art of the Handwritten Note: A Guide to Writing Heartfelt Notes for Every Occasion. Encouraging. I need to improve my handwriting a bit before committing to the art. Favorite: Once in a while, to spare the feelings of the giver completely, you must not only send prompt, handwritten thanks for the gift and keep the gift but also go through...</description>
+    </item>
+    
+    <item>
+      <title>Blaine of Maine</title>
+      <link>https://jvining.com/notes/blaineofmaine.html</link>
+      <guid isPermaLink="true">https://jvining.com/notes/blaineofmaine.html</guid>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 -0600</pubDate>
+      <description>During the debates about amnesty for Jefferson Davis that took place in 1875 and 1876, Republican Representative and former Speaker of the House James G. Blaine argued that giving Jefferson Davis amnesty from the 14th Amendment would make Davis eligible for President of the United States. In 1876, a bill was proposed by Samuel J. Randall in the House of Representatives to remove all of the “[political] disabilities” that had been added by the 14th...</description>
+    </item>
+    
+  </channel>
+</rss>

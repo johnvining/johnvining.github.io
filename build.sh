@@ -10,6 +10,7 @@ env -i \
 cp docs/index.html index.html
 cp docs/projects.html projects.html
 cp docs/contact.html contact.html
+cp docs/feed.xml feed.xml
 
 for f in docs/notes/*.html; do
   [ -f "$f" ] && cp "$f" "notes/$(basename "$f")"
@@ -19,4 +20,4 @@ for f in docs/reading/*.html; do
   [ -f "$f" ] && cp "$f" "reading/$(basename "$f")"
 done
 
-echo "Built and copied to notes/, reading/, index.html"
+echo "Built and copied to notes/, reading/, index.html, feed.xml"
