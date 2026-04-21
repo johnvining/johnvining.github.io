@@ -309,13 +309,20 @@ a.contact-handle {
 	font-family: "Monaco", "Courier New", monospace;
 	font-size: 9px;
 	white-space: nowrap;
-	min-width: 52px;
-	display: inline-block;
-	text-align: center;
 }
 
 a.contact-handle:hover {
 	background-color: #00ccad;
+}
+
+span.contact-handle-disabled {
+	color: #999;
+	background-color: #f0f0f0;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-family: "Monaco", "Courier New", monospace;
+	font-size: 9px;
+	white-space: nowrap;
 }
 
 .contact-value {
