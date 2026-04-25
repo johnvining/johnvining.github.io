@@ -4,3 +4,4 @@ docs/
 .bundle/
 Gemfile.lock
 .claude/
+node_modules/

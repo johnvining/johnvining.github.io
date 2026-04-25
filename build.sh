@@ -6,6 +6,8 @@ env -i \
   PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/bin:/usr/bin:/bin" \
   /opt/homebrew/opt/ruby/bin/bundle exec jekyll build
 
+node generate-og.js
+
 # Copy built files to canonical paths so git diff shows changes inline
 cp docs/index.html index.html
 cp docs/projects.html projects.html
@@ -20,4 +22,7 @@ for f in docs/reading/*.html; do
   [ -f "$f" ] && cp "$f" "reading/$(basename "$f")"
 done
 
-echo "Built and copied to notes/, reading/, index.html, feed.xml"
+mkdir -p og
+cp docs/og/*.png og/
+
+echo "Built and copied to notes/, reading/, index.html, feed.xml, og/"

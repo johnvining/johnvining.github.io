@@ -4,6 +4,15 @@
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="../style.css">
 	<link rel="alternate" type="application/rss+xml" title="John Vining" href="https://jvining.com/feed.xml">
+	{% assign slug = page.path | remove_first: '_notes/' | remove_first: '_reading/' | replace: '.md', '' %}
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://jvining.com{{ page.url }}">
+	<meta property="og:image" content="https://jvining.com/og/{{ slug }}.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://jvining.com/og/{{ slug }}.png">
 </head>
 <body>
 

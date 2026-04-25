@@ -1,0 +1,11 @@
+{
+  "name": "johnvining-site",
+  "private": true,
+  "scripts": {
+    "generate-og": "node generate-og.js"
+  },
+  "dependencies": {
+    "sharp": "^0.34.1",
+    "gray-matter": "^4.0.3"
+  }
+}
