@@ -25,6 +25,10 @@ exclude:
   - Gemfile.lock
   - diff.sh
   - build.sh
+  - sitemap.txt
+
+plugins:
+  - jekyll-sitemap
 
 kramdown:
   input: GFM
