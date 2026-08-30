@@ -12,6 +12,10 @@ div.headernav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: #e8fffc;
+	border-radius: 8px;
+	padding: 8px 12px;
+	margin: 0 -12px;
 }
 
 div.articletitle {
@@ -162,6 +166,7 @@ li {
 .article-list {
 	width: 100%;
 	border-collapse: collapse;
+	margin-top: 24px;
 }
 
 .article-list .date-cell {
