@@ -105,7 +105,7 @@ a:visited {
 
 a.footnote {
 	font-size: 8px;
-	vertical-align: super;
+	line-height: 1;
 	text-decoration: none;
 	background-color: white;
 	padding: 2px;
