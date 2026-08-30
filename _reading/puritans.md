@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Reading Notes: Two Books on Puritans"
+title: "Reading: Two Books on Puritans"
 slug: puritans
 display_date: 8/30/26
 date: 2026-08-30
