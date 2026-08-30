@@ -81,14 +81,28 @@ async function generateImage(slug, title, subtitle, outDir) {
   console.log(`  ${slug}.png`);
 }
 
-async function processDir(srcDir, outDir) {
+// Pull the book titles out of a reading entry's "#### Author, *Title*." headings,
+// e.g. "Reading: June, 2025" -> "Essentialism, The House of Morgan, Tinker Tailor Soldier Spy"
+function extractBookTitles(content) {
+  const titles = [];
+  const headingRe = /^#{2,6}\s+.*$/gm;
+  let match;
+  while ((match = headingRe.exec(content)) !== null) {
+    const heading = match[0];
+    const italic = heading.match(/\*([^*]+)\*/);
+    if (italic) titles.push(italic[1].trim());
+  }
+  return titles.join(', ');
+}
+
+async function processDir(srcDir, outDir, { booksAsSubtitle = false } = {}) {
   const files = fs.readdirSync(srcDir).filter(f => f.endsWith('.md'));
   for (const file of files) {
     const raw = fs.readFileSync(path.join(srcDir, file), 'utf8');
-    const { data } = matter(raw);
+    const { data, content } = matter(raw);
     if (!data.title) continue;
     const slug = path.basename(file, '.md');
-    const subtitle = data.subtitle || null;
+    const subtitle = data.subtitle || (booksAsSubtitle ? extractBookTitles(content) : null) || null;
     await generateImage(slug, data.title, subtitle, outDir);
   }
 }
@@ -99,7 +113,7 @@ async function main() {
 
   console.log('Generating OG images...');
   await processDir(path.join(__dirname, '_notes'), outDir);
-  await processDir(path.join(__dirname, '_reading'), outDir);
+  await processDir(path.join(__dirname, '_reading'), outDir, { booksAsSubtitle: true });
   console.log('Done.');
 }
 
