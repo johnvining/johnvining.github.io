@@ -81,8 +81,9 @@ async function generateImage(slug, title, subtitle, outDir) {
   console.log(`  ${slug}.png`);
 }
 
-// Pull the book titles out of a reading entry's "#### Author, *Title*." headings,
-// e.g. "Reading: June, 2025" -> "Essentialism, The House of Morgan, Tinker Tailor Soldier Spy"
+// Pull the book titles out of a reading entry's "### Author, *Title*." headings,
+// dropping any subtitle after a colon to match the index page's book-titles list,
+// e.g. "Reading: June, 2025" -> "Essentialism, The House of Morgan, Tinker, Tailor, Soldier, Spy"
 function extractBookTitles(content) {
   const titles = [];
   const headingRe = /^#{2,6}\s+.*$/gm;
@@ -90,7 +91,7 @@ function extractBookTitles(content) {
   while ((match = headingRe.exec(content)) !== null) {
     const heading = match[0];
     const italic = heading.match(/\*([^*]+)\*/);
-    if (italic) titles.push(italic[1].trim());
+    if (italic) titles.push(italic[1].split(':')[0].trim());
   }
   return titles.join(', ');
 }

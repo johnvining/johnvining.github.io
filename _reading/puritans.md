@@ -6,7 +6,8 @@ display_date: 8/30/26
 date: 2026-08-30
 ---
 
-### David D. Hall, *The Puritans: A Transatlantic History*.
+### David D. Hall, *The Puritans: A Transatlantic History*
+
 For David D. Hall, Puritanism is "the Reformed tradition [i.e. International Calvinism] with a Scottish, English, or colonial accent."[^1] The term "Puritan" is a "nickname", "introduced by English Catholics" in the "mid 1560's".[^2]
 
 The book aims to correct a number of errors that exist in the scholarship about (and popular conception of) the Puritans. American scholars have been especially confused, he writes, because they were less sensitive to complex pre-colonial church practices. They made both the particularizing mistake of assuming that a general *Protestant* practice was particularly *Puritan*, and the generalizing mistake of assuming that some Puritan's idiosyncratic cultural practice actually represented the "Puritan mode" of such-and-such.[^3] The American scholars of the '70's and 80's incorrectly thought that "Puritan households were grimly repressive or unloving."[^4] 
@@ -54,7 +55,8 @@ The locus of salvation is in inner life and only there could one find clues abou
 > Constancy of this kind mattered a great deal to Margaret Hoby (d. 1633), a woman of wealth and high rank who spent part of every day in prayer, making notes in her Bible, “examin[ing]” herself, and meditating, much of it done in “private,” although she also attended two services on Sunday and, some evenings, listened to others read aloud from the Book of Martyrs and the writings of Richard Greenham (a favorite), Perkins, and George Gifford. In her quest for constancy, she turned back to what she written [sic] in her journal some years earlier, hoping to “finde some profit” from a “Course” she was neglecting. When she could not attend a Sunday service or was away from home in London, she relied on sermon notes others had taken.[^24]
 
 In *The Puritans*, then, the reader gets the image of the Puritans that is founded on, first, their specific doctrine and beliefs and, second, the spiritual practices that follow from those beliefs. The Puritan spiritual seriousness is seen animating primarily inward practices rather than the external, "puritanical" policing and persecution of others for which they developed such a bad reputation.
-### Peter C. Mancall, *The Trials of Thomas Morton: An Anglican Lawyer, His Puritan Foes, and the Battle for a New England*.
+
+### Peter C. Mancall, *The Trials of Thomas Morton: An Anglican Lawyer, His Puritan Foes, and the Battle for a New England*
 
 Thomas Morton was an English colonist who first came to America in 1622.[^25] He did not like America and America did not like him. More accurately, he did not like the Puritans and they did not like him. Peter C. Mancall's book, *The Trials of Thomas Morton*, is the story of Morton's unrelenting conflict with the Puritans, his establishment of the "Ma-re Mount" settlement, and his eventually successful efforts to publish a work called *New English Canaan*.
 
