@@ -42,7 +42,8 @@ h3 {
 
 div.articletitle h3 {
 	margin-top: 0px;
-	font-size: 16px;
+	margin-bottom: 24px;
+	font-size: 18px;
 }
 
 div.articletitle h3:first-child {
@@ -62,23 +63,10 @@ div.articletitle h3.article-date {
 
 
 
-/*Book title*/
-h4 {
-	font-size: 16px;
-	font-weight: normal;
-	margin-top: 26px;
-}
-
 /*Subtitle*/
 h5 {
 	font-weight: normal;
 	color: #292828;
-}
-
-/*Notes list*/
-h4 {
-	font-size: 14px;
-	font-weight: normal;
 }
 
 .date {
