@@ -29,7 +29,8 @@
 	<h3 id="{{ page.slug }}">{{ page.title }}</h3>
 </div>
 
-{{ content }}
+{{ content | replace: '<div class="footnotes"', '<hr />
+<div class="footnotes"' }}
 
 <script src="../footnote-popover.js"></script>
 </body>
