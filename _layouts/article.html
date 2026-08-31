@@ -1,36 +1,83 @@
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="../style.css">
 	<link rel="alternate" type="application/rss+xml" title="John Vining" href="https://jvining.com/feed.xml">
 	{% assign slug = page.path | remove_first: '_notes/' | remove_first: '_reading/' | replace: '.md', '' %}
+	{% comment %}
+	  Description precedence: an explicit front-matter subtitle (the book
+	  list, for reading posts) - the article's own "On ..." preview line
+	  (an <h5>, for notes) - the excerpt, as a last resort.
+	{% endcomment %}
+	{% assign description = page.subtitle %}
+	{% unless description %}
+		{% if content contains '<h5' %}
+			{% comment %} the h5 is always the article's opening element, so
+			everything before its close tag is just that one heading {% endcomment %}
+			{% assign description = content | split: '</h5>' | first %}
+		{% else %}
+			{% assign description = page.excerpt %}
+		{% endif %}
+	{% endunless %}
+	{% assign description = description | strip_html | strip_newlines | normalize_whitespace | strip | truncatewords: 40 %}
+	<meta name="author" content="John Vining">
+	<meta name="description" content="{{ description }}">
+	<meta property="og:site_name" content="John Vining">
 	<meta property="og:title" content="{{ page.title }}">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://jvining.com{{ page.url }}">
 	<meta property="og:image" content="https://jvining.com/og/{{ slug }}.png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
+	<meta property="og:description" content="{{ description }}">
+	<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+	<meta property="article:author" content="John Vining">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="https://jvining.com/og/{{ slug }}.png">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"headline": {{ page.title | jsonify }},
+		"description": {{ description | jsonify }},
+		"datePublished": "{{ page.date | date_to_xmlschema }}",
+		"author": {
+			"@type": "Person",
+			"name": "John Vining",
+			"url": "https://jvining.com"
+		},
+		"publisher": {
+			"@type": "Person",
+			"name": "John Vining"
+		},
+		"image": "https://jvining.com/og/{{ slug }}.png",
+		"mainEntityOfPage": "https://jvining.com{{ page.url }}"
+	}
+	</script>
 </head>
 <body>
 
-<div class="headernav">
+<header class="headernav">
 	<h2><a href="https://jvining.com" class="title">John Vining</a></h2>
 	<div>
 		<a href="../projects.html" class="nav">Projects</a>
 		<a href="../contact.html" class="nav">Contact</a>
 	</div>
-</div>
+</header>
+
+<article>
 
 <div class="articletitle">
-	<h3 class="article-date">{{ page.display_date }}</h3>
-	<h3 id="{{ page.slug }}">{{ page.title }}</h3>
+	<time class="article-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.display_date }}</time>
+	<h1 id="{{ page.slug }}">{{ page.title }}</h1>
 </div>
 
 {{ content | replace: '<div class="footnotes"', '<hr />
 <div class="footnotes"' }}
+
+</article>
 
 <script src="../footnote-popover.js"></script>
 </body>

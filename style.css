@@ -8,7 +8,7 @@ body {
 	box-sizing: border-box;
 	}
    
-div.headernav {
+.headernav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -44,22 +44,17 @@ h3 {
 
 
 
-div.articletitle h3 {
+div.articletitle h1 {
 	margin-top: 0px;
 	margin-bottom: 24px;
 	font-size: 18px;
+	font-weight: normal;
 }
 
-div.articletitle h3:first-child {
+div.articletitle .article-date {
+	display: block;
 	margin-top: 0px;
 	margin-bottom: 4px;
-}
-
-div.articletitle h3:last-child {
-	margin-top: 0px;
-}
-
-div.articletitle h3.article-date {
 	font-size: 9px;
 	color: #666666;
 	font-family: "Monaco", "Courier New", monospace;
@@ -352,7 +347,7 @@ span.contact-handle-disabled {
 		margin-inline-end: 0;
 	}
 
-	div.articletitle h3 {
+	div.articletitle h1 {
 		font-size: 18px;
 	}
 }

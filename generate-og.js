@@ -96,6 +96,13 @@ function extractBookTitles(content) {
   return titles.join(', ');
 }
 
+// Pull the "On ..." preview line out of a note's leading "##### *...*"
+// heading, for notes that don't have an explicit subtitle set.
+function extractPreviewLine(content) {
+  const match = content.match(/^#####\s+\*(.+)\*\s*$/m);
+  return match ? match[1].trim() : null;
+}
+
 async function processDir(srcDir, outDir, { booksAsSubtitle = false } = {}) {
   const files = fs.readdirSync(srcDir).filter(f => f.endsWith('.md'));
   for (const file of files) {
@@ -103,7 +110,9 @@ async function processDir(srcDir, outDir, { booksAsSubtitle = false } = {}) {
     const { data, content } = matter(raw);
     if (!data.title) continue;
     const slug = path.basename(file, '.md');
-    const subtitle = data.subtitle || (booksAsSubtitle ? extractBookTitles(content) : null) || null;
+    const subtitle = data.subtitle
+      || (booksAsSubtitle ? extractBookTitles(content) : extractPreviewLine(content))
+      || null;
     await generateImage(slug, data.title, subtitle, outDir);
   }
 }

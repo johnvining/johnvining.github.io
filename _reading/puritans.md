@@ -4,6 +4,7 @@ title: "Reading: Two Books on Puritans"
 slug: puritans
 display_date: 8/30/26
 date: 2026-08-30
+subtitle: "The Puritans, The Trials of Thomas Morton"
 ---
 
 ### David D. Hall, *The Puritans: A Transatlantic History*
