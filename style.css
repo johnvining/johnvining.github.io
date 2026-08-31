@@ -103,10 +103,29 @@ a.footnote {
 	padding: 2px;
 	border-radius: 2px;
 	margin: 2px;
+	cursor: pointer;
 }
 
 a.footnote:hover {
 	background-color: #00ccad;
+}
+
+.footnote-popover {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	max-width: 280px;
+	background-color: white;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	padding: 8px 10px;
+	font-size: 11px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	color: #292828;
+}
+
+.footnote-popover p {
+	margin: 0;
 }
 
 a.title {
