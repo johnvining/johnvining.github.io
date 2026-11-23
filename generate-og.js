@@ -113,7 +113,9 @@ async function processDir(srcDir, outDir, { booksAsSubtitle = false } = {}) {
     const subtitle = data.subtitle
       || (booksAsSubtitle ? extractBookTitles(content) : extractPreviewLine(content))
       || null;
-    await generateImage(slug, data.title, subtitle, outDir);
+    // No subtitle line when the title already names the (single) book.
+    const finalSubtitle = subtitle && data.title.includes(subtitle) ? null : subtitle;
+    await generateImage(slug, data.title, finalSubtitle, outDir);
   }
 }
 
